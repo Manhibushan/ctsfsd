@@ -1,0 +1,19 @@
+<p>employee-create works!</p>
+<form #empForm="ngForm" (ngSubmit)="onSubmit(empForm.value)">
+
+
+
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" name="name"  ngModel #name id="" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Email</label>
+        <input type="text" name="email"  ngModel #email id="" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Phone</label>
+        <input type="text" name="phone"  ngModel #phone id="" class="form-control">
+    </div>
+    <input type="submit" value="create" class="btn btn-primary">
+</form>
